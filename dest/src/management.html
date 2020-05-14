@@ -1,0 +1,30 @@
+<br>
+<div style="text-align:center;"><h2>Customer Management</h2></div>
+
+<div class="row"  style="margin-top: 20px;" ng-controller="management">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-5">
+        <table class="table table-bordered">
+            <thead class="thead-dark ">
+                <tr>
+                    <th>Name</th>
+                    <th>Mobile number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr ng-repeat="obj in objs">
+                            <td>{{ obj.name }}</td>
+                            <td>{{ obj.number }}</td>
+                            <td>
+                            <button type="button" class="btn btn-info" ng-click="edit(obj)">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+   
+                            </td>
+                        </tr>
+                    
+            </tbody>
+        </table>    
+        </div>
+     
+</div>
